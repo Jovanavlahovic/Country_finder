@@ -1,0 +1,47 @@
+.has-search .form-control {
+    padding-left: 2.375rem;
+    background-color: hsl(209, 23%, 22%);
+    border: none;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%)
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.select{
+    text-align: right;
+}
+
+@media only screen and (max-width: 770px){
+    .select{
+        text-align: left;
+    }
+    .select select{
+        width: 60%;
+    }
+}
+
+.select select{
+    background-color: hsl(209, 23%, 22%);
+    color: #fff;
+    border: none;
+    height: 2.375rem;
+    border-radius: 5px;
+    padding: 0 10px;
+    width: 40%;
+}
+
