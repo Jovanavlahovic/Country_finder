@@ -23,18 +23,82 @@ p{
     margin-bottom: 0.5em;
 }
 
-.borders span{
+.borders p, ul {
+    display: inline-block;
+}
+
+.borders li{
     padding: 5px;
     background-color: hsl(209, 23%, 22%);
     border-radius: 5px;
     margin-right: 4px;
+    display: inline-block;
+}
+
+
+@media only screen and (max-width: 970px){
+
+    .clearfix{
+        display: block;
+    }
+
+    .imgBox img{
+        width: 70%;
+        margin: 1em auto;
+    }
+
+    .imgBox, .detailsBox h3{
+        text-align: center;
+    }
+
+    .detailsBox{
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .btnBox{
+        margin-top: 1.5em;
+        margin-left: 15%;
+    }
+    
+    button{
+        width: 70px;
+        padding: 5px;
+    }
+
+}
+
+@media only screen and (min-width: 900px){
+    img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 830px){
+    .detailsBox{
+        width: 90%;
+    }
+    .right{
+        padding-left: 1em;
+    }
 }
 
 @media only screen and (max-width: 500px){
-    table td{
-    width: 100%;
-}
-}
+    .left, .right{
+        width: 100%;
+    }
 
+    .right{
+        padding-left: 0;
+    }
+
+    .btnBox{
+        margin-left: 5%;
+    }
+
+    .imgBox img{
+        width: 90%;
+    }
+}
 
 
