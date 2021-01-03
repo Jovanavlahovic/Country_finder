@@ -16,7 +16,7 @@ import { CountryDetailsComponent } from './countries/country-details/country-det
     TitleBarComponent,
     CountriesComponent,
     CountryComponent,
-    CountryDetailsComponent
+    CountryDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +25,6 @@ import { CountryDetailsComponent } from './countries/country-details/country-det
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

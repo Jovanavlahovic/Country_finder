@@ -24,4 +24,7 @@ export class GetDataService {
   getCountriesByName(name: string): Observable<Country[]>{
     return this.http.get(`${baseUrl}/name/${name}`).pipe(map((response: any) => response as Array<Country>));
   }
+  getCountry(name: string): Observable<Country>{
+    return this.http.get(`${baseUrl}/name/${name}/?fullText=true`).pipe(map(response => new Country (response[0])));
+  }
 }

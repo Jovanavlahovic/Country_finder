@@ -6,9 +6,9 @@ export class Country {
   nativeName: string;
   subregion: string;
   topLevelDomain: string[];
-  currencies: string[];
+  currencies: [];
   languages: [];
-  borderes: string[];
+  borders: [];
   flag: string;
 
   constructor(obj?: any){
@@ -21,7 +21,7 @@ export class Country {
         this.topLevelDomain = obj && obj.topLevelDomain || [];
         this.currencies = obj && obj.currencies || [];
         this.languages = obj && obj.languages || [];
-        this.borderes = obj && obj.borderes || [];
+        this.borders = obj && obj.borders || [];
         this.flag = obj && obj.flag || '';
   }
 }

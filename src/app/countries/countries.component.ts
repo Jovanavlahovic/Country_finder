@@ -42,6 +42,8 @@ export class CountriesComponent implements OnInit {
     } else{
       this.service.getCountriesByName(this.countryName).subscribe((response) => {
         this.countries = response;
+      }, err => {
+        alert('Cannot find the country! Try again.')
       });
     }
     

@@ -33,6 +33,21 @@
     .select select{
         width: 60%;
     }
+
+    .box{
+        justify-content: space-around;
+    }
+
+    .country{
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .country{
+        width: 80%;
+    }
 }
 
 .select select{

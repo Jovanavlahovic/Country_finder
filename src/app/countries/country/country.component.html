@@ -1,1 +1,32 @@
-<p>country works!</p>
+<div class="p-5">
+    <div class="row">
+        <div class="col">
+            <button type="button" (click)="goBack()"><img src="assets/arrow-white.png" alt="left-arrow">Back</button>
+        </div>
+    </div>
+    <div class="row mt-md-5">
+        <div class="col-sm-12 col-md-5">
+            <img src="{{country?.flag}}" alt="{{country?.name}} " width="100%">
+        </div>
+        <div class="col-sm-12 col-md-7 pl-md-5 pt-md-4">
+            <h3 class="mb-md-4">{{country?.name}}</h3>
+            <div class="clearfix">
+                <div class="left">
+                <p><b>Native name: </b>{{country?.nativeName}}</p>
+                <p><b>Population: </b>{{country?.population}}</p>
+                <p><b>Region: </b>{{country?.region}}</p>
+                <p><b>Sub region: </b>{{country?.subregion}}</p>
+                <p><b>Capital: </b>{{country?.capital}}</p>
+            </div>
+            <div class="right">
+                <p><b>Top Level Domain: </b>{{country?.topLevelDomain[0]}}</p>
+                <p><b>Currencies: </b><span *ngFor="let curr of country?.currencies; let last = last;">{{curr.name}}{{last?'': ', '}}</span></p>
+                <p><b>Languages: </b><span *ngFor="let lang of country?.languages; let last = last;">{{lang.name}}{{last?'':', '}}</span></p>
+            </div>
+            </div>
+            <div class="borders mt-3">
+                <p>Border Countries: <span *ngFor="let country of country?.borders;">{{convertCountryCode(country)}}</span></p>
+            </div>
+        </div>
+    </div>
+</div>
