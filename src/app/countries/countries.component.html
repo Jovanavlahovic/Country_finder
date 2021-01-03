@@ -2,18 +2,26 @@
     <div class="col-md-6 col-sm-8">
        <div class="form-group has-search">
             <span class="fa fa-search form-control-feedback"></span>
-            <input type="text" class="form-control" placeholder="Search for a country...">
+            <input type="text" class="form-control" [(ngModel)]="countryName"
+            (change)="getCountriesByName()" placeholder="Search for a country...">
         </div>
     </div>
-    <div class="col-md-6 col-sm-12">
+    <div class="col-md-6 col-sm-8">
        <div class="form-group select">
-            <select name="region" id="region">
+           <label for="region" class="mr-2">Choose region:</label>
+            <select name="region" id="region" [(ngModel)]="region" (change)="getCountriesByRegion()">
+                <option value="">All</option>
                 <option value="africa">Africa</option>
                 <option value="americas">Americas</option>
                 <option value="asia">Asia</option>
                 <option value="europe">Europe</option>
                 <option value="Oceania">Oceania</option>
             </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-lg-3 mt-3 country" *ngFor="let country of countries"  [routerLink]="[country?.name]">
+            <app-country-details [country]="country"></app-country-details>
         </div>
     </div>
 </div>

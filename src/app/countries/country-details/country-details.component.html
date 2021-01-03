@@ -1,1 +1,14 @@
-<p>country-details works!</p>
+<div class="flag" [style.backgroundImage]="'url('+ country?.flag +')'">
+</div>
+<div class="text-box p-2">
+    <h5>{{country?.name}}</h5>
+    <p class="mt-3"><b>Population: </b><span>{{country?.population}}</span></p>
+    <p><b>Region: </b><span>{{country?.region}}</span></p>
+    <p><b>Capital: </b><span>{{country?.capital}}</span></p>
+</div>
+
+
+
+
+
+

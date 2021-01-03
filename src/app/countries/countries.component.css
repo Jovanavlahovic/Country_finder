@@ -45,3 +45,13 @@
     width: 40%;
 }
 
+
+
+.country:hover{
+    cursor: pointer;
+    background-color: hsl(208, 21%, 27%)
+}
+
+
+
+
