@@ -1,5 +1,5 @@
 
-Within this app you have an opportunity to find and read about any country in the world. I've used RESTful API Countries (https://restcountries.eu/) in this project.
+Within this app you have an opportunity to find and read about any country in the world. I used RESTful API Countries (https://restcountries.eu/) in this project.
 
 
 # RestCountries
